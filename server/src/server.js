@@ -6,6 +6,12 @@ const cors = require("cors");
 const server = express();
 
 server.use(morgan("dev"));
+
+// server.use((req, res, next) =>{
+//     console.log("Acá estoy");
+//     next();
+// });
+
 server.use(express.json());
 server.use(cors());
 
